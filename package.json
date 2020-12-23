@@ -1,0 +1,26 @@
+{
+  "name": "@von-development-studio/primeng-confirmation-dialog",
+  "version": "1.0.1",
+  "description": "Angular + PrimeNG confirmation dialog.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VON-Development-Studio/primeng-confirmation-dialog"
+  },
+  "keywords": [
+    "angular",
+    "angular 11",
+    "primeng",
+    "confirmation dialog"
+  ],
+  "author": "Luis García Castro",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^11.0.3",
+    "@angular/core": "^11.0.3",
+    "primeng": "^11.0.0",
+    "@fortawesome/fontawesome-free": "^5.15.1"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

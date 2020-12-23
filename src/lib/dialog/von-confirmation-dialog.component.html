@@ -1,0 +1,23 @@
+<div class="p-d-flex p-flex-column p-ai-center von__confirmation">
+  <h3 *ngIf="!loading && !saving" [textContent]="messages.message"></h3>
+
+  <div *ngIf="loading && saving">
+    <p-progressSpinner></p-progressSpinner>
+  </div>
+
+  <div class="p-d-inline-flex p-flex-column p-ai-center" *ngIf="!loading && saving">
+    <i class="von__icon {{icon}}" [ngClass]="{'text-success': valid, 'text-danger': !valid}" [@fadeInOut]></i>
+    <h3 [ngClass]="{'text-success': valid, 'text-danger': !valid}">
+      <span *ngIf="valid">{{messages.success}}</span>
+      <span *ngIf="!valid">{{messages.failure}}</span>
+    </h3>
+  </div>
+
+  <div class="p-as-end von__buttons">
+    <button pButton class="von-buttons__btn p-button-info p-button-outlined" type="button"
+      [label]="finished ? messages.close : messages.cancel" [disabled]="loading" (click)="close()"></button>
+
+    <button pButton class="von-buttons__btn p-button-success" type="button" [label]="messages.save" [disabled]="loading"
+      *ngIf="!finished" (click)="save()"></button>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/primeng-confirmation-dialog",
+  "lib": {
+    "entryFile": "src/public-api.ts",
+    "styleIncludePaths": [
+      "./src/scss"
+    ],
+    "umdModuleIds": {
+      "primeng/dynamicdialog": "primeng/dynamicdialog",
+      "primeng/button": "primeng/button",
+      "primeng/dialog": "primeng/dialog",
+      "primeng/progressspinner": "primeng/progressspinner"
+    }
+  }
+}

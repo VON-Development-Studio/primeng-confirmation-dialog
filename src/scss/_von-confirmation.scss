@@ -1,0 +1,27 @@
+$success-color: #18b318 !default;
+$danger-color: #ff0000 !default;
+$buttons-wrapper-margin: 30px 0 0 !default;
+$icon-size: 72px !default;
+
+.von__confirmation {
+  .text-success {
+    color: $success-color;
+  }
+
+  .text-danger {
+    color: $danger-color;
+  }
+
+  .von__icon {
+    font-size: $icon-size;
+    padding: 10px 20px;
+  }
+
+  .von__buttons {
+    margin: $buttons-wrapper-margin;
+
+    .von-buttons__btn + .von-buttons__btn {
+      margin-left: 10px;
+    }
+  }
+}
